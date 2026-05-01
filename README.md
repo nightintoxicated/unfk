@@ -2,7 +2,7 @@
 
 **unfk** is a lightweight Perl-based utility for identifying and terminating processes associated with connected terminal sessions.
 
-It is useful when you have a stuck or unresponsive command in a session, but can open a new shell to manage and kill it safely.
+It is useful when you have a stuck or unresponsive command in a session and cant exit with ctrl+c or ctrl+d, but can open a new shell to manage and kill it safely.
 
 > ⚠️ **Warning:** This tool can terminate running processes. Use with care, especially on shared or production systems.
 
