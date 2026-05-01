@@ -103,14 +103,14 @@ Project Structure
 └── unfk.pm        # Process resolution and termination logic
 
 Safety Notes
-This tool does not currently filter system-critical processes
-Process matching is based on command string comparison (can be imprecise)
+Process matching is based on command string comparison, double check before you kill stuff.
 
 
 Recommended usage:
 
 Use from a secondary shell/session
 Avoid running blindly on production systems
+Double check a few process' PID with PS manually and compare against this program before committing to the tool, to be sure it lines up as you'd expect.
 Prefer SIGTERM before SIGKILL
 Known Limitations
 Process matching relies on ps -ef parsing (not fully reliable)
