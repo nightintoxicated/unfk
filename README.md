@@ -78,7 +78,7 @@ choose a session
 0) TTY: pts/0 | command: bash
 1) TTY: pts/1 | command: python script.py
 selection:
-2. Process matching
+
 
 The tool will:
 
