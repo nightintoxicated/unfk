@@ -1,0 +1,22 @@
+ukfk - a process killer for commands running under current connected session
+useful for when you have a terminal with a stuck command, but can open a new shell
+
+setup:
+  Dependencies:
+    procps-ng
+      check with: w -s|head -n 2|tail -n 1
+      you're looking for: USER, TTY, FROM, IDLE, WHAT
+      if this isn't lined up, this program wont work
+
+    ExtUtils::MakeMaker;
+        perl-ExtUtils-MakeMaker or maybe the perl-devel package
+
+  install:
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+  usage:
+    unfk
+
