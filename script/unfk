@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use session;
+use unfk;
+
+my $all_tty = session::get_sessions(); 
+my $menu_selection = session::get_target($all_tty);
+
+my $target = unfk->new($menu_selection);
+my $target_pid = $target->locate_pid();
+$target->kill_pid($target_pid);
