@@ -110,7 +110,7 @@ Recommended usage:
 
 Use from a secondary shell/session
 Avoid running blindly on production systems
-Double check a few process' PID with PS manually and compare against this program before committing to the tool, to be sure it lines up as you'd expect.
+Double check a few process PID with PS manually and compare against this program before committing to the tool to be sure it lines up as you'd expect.
 Prefer SIGTERM before SIGKILL
 Known Limitations
 Process matching relies on ps -ef parsing (not fully reliable)
