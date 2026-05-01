@@ -95,6 +95,8 @@ Options)
 1) graceful (SIGTERM)
 2) kill (SIGKILL)
 3) int (SIGINT)
+
+
 Project Structure
 
 ├── session.pm     # Session discovery and selection
